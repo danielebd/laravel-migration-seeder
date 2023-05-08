@@ -8,4 +8,7 @@
 - generare il page-controller con 'php artisan make:controller Guest/PageController'
 - generare il model per la connettere il db a laravel 'php artisan make:model Trains'
 - in PageController inserire 'use App\Models\Trains;' e creare la funzione che vada a prendere solo i dati che ci interanno, in questo caso la data di partenza odierna.
-- stampare i dati in in blade.
+- stampare i dati in blade.
+
+# SEEDER 
+-

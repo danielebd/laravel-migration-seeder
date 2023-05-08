@@ -23,8 +23,8 @@ return new class extends Migration
             $table->time('arrival_time');
             $table->string('train_code', 10);
             $table->tinyInteger('carriage_number')->unsigned();
-            $table->boolean('on_time');
-            $table->boolean('cancelled');
+            $table->boolean('on_time')->default(true);
+            $table->boolean('cancelled')->default(false);
             $table->timestamps();
         });
     }
