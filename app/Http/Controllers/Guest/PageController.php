@@ -13,7 +13,7 @@ class PageController extends Controller
     public function index()
     {
 
-        $trains = Trains::where('departure_date', SupportCarbon::today()->format('Y-m-d'))->get();
+        $trains = Trains::where('departure_time', SupportCarbon::today()->format('Y-m-d'))->get();
         
         
         return view('home', compact('trains'));
